@@ -5,8 +5,13 @@ def join_nested_strings(src)
   index = 0
   while index < src.length do
     p src[index]
-    if src[index].class == String 
-      result << src[index]
+    in_in = 0
+    while in_in < src[index].length do
+      
+      if src[index][in_in].class == String 
+        result << src[index][in_in]
+      end
+      in_in += 1
     end
     index += 1
   end
