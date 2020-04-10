@@ -7,5 +7,6 @@ def join_nested_strings(src)
     if src[index].class == String then result << src[index] end
     index += 1
   end
+  p result
   return result.join(" ")
 end
